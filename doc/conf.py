@@ -44,7 +44,7 @@ version = sktree.__version__
 # The full version, including alpha/beta/rc tags.
 release = version
 
-gh_url = "https://github.com/neurodata/scikit-tree"
+gh_url = "https://github.com/awyuan/scikit-tree"
 
 # -- general configuration ------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -128,7 +128,7 @@ html_theme_options = {
     "show_toc_level": 1,
     "navbar_end": ["theme-switcher", "version-switcher", "navbar-icon-links"],
     "switcher": {
-        "json_url": "https://raw.githubusercontent.com/neurodata/scikit-tree/main/doc/_static/versions.json",  # noqa: E501
+        "json_url": "https://raw.githubusercontent.com/awyuan/scikit-tree/main/doc/_static/versions.json",  # noqa: E501
         "version_match": switcher_version_match,
     },
 }
@@ -338,7 +338,7 @@ bibtex_style = "unsrt"
 bibtex_footbibliography_header = ""
 
 # -- Sphinx-issues -----------------------------------------------------------
-issues_github_path = "neurodata/scikit-tree"
+issues_github_path = "awyuan/scikit-tree"
 
 # -- sphinx.ext.linkcode -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/extensions/linkcode.html

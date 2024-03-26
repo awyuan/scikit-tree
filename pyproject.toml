@@ -23,7 +23,7 @@ maintainers = [
   {name = "Neurodata", email = "adam.li@columbia.edu"}
 ]
 documentation = "https://scikit-tree.neurodata.io"
-repository = "https://github.com/neurodata/scikit-tree"
+repository = "https://github.com/awyuan/scikit-tree"
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
