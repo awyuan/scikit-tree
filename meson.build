@@ -61,7 +61,7 @@ if not cython.found()
 endif
 
 # r = run_command('git', 'submodule', 'update', '--init', check: false)
-r = run_command('mv', 'sktree/_lib/sklearn_fork/sklearn', 'sktree/_lib/sklearn', check: false)
+r = run_command('cp', 'sktree/_lib/sklearn_fork/sklearn', 'sktree/_lib/sklearn', check: false)
 
 # Setup Python:
 # https://mesonbuild.com/Python-module.html

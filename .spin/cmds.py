@@ -60,20 +60,20 @@ def setup_submodule(forcesubmodule=False):
     current_hash = ""
 
     # if the forked folder does not exist, we will need to force update the submodule
-    if not os.path.exists("./sktree/_lib/sklearn/") or forcesubmodule:
-        # update git submodule
-        util.run(["git", "submodule", "update", "--init", "--force"])
-    else:
-        # update git submodule
-        util.run(
-            [
-                "git",
-                "submodule",
-                "update",
-                "--init",
-                "--force",
-            ]
-        )
+    # if not os.path.exists("./sktree/_lib/sklearn/") or forcesubmodule:
+    #     # update git submodule
+    #     util.run(["git", "submodule", "update", "--init", "--force"])
+    # else:
+    #     # update git submodule
+    #     util.run(
+    #         [
+    #             "git",
+    #             "submodule",
+    #             "update",
+    #             "--init",
+    #             "--force",
+    #         ]
+    #     )
 
     # get the commit hash if the commmit file exists
     if os.path.exists(commit_fpath):
