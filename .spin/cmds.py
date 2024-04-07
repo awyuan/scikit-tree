@@ -106,23 +106,24 @@ def setup_submodule(forcesubmodule=False):
         with open(commit_fpath, "w") as f:
             f.write(current_hash)
 
+    util.run(
+        [
+            "rm",
+            "-rf",
+            "sktree/_lib/sklearn",
+        ]
+    )
+
+    if os.path.exists("sktree/_lib/sklearn_fork/sklearn"):
+        print("Performing copy of sklearn fork to sklearn")
         util.run(
             [
-                "rm",
-                "-rf",
+                "cp",
+                "-r",
+                "sktree/_lib/sklearn_fork/sklearn",
                 "sktree/_lib/sklearn",
             ]
         )
-
-        if os.path.exists("sktree/_lib/sklearn_fork/sklearn") and (commit != current_hash):
-            util.run(
-                [
-                    "cp",
-                    "-r",
-                    "sktree/_lib/sklearn_fork/sklearn",
-                    "sktree/_lib/sklearn",
-                ]
-            )
 
 
 @click.command()
